@@ -1,0 +1,106 @@
+#:kivy 2.1.0
+<Name>:
+    canvas:
+        Color:
+            rgb: 1,1,1
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    BoxLayout:
+        canvas:
+            Color:
+                rgb: 0,0,1
+            Rectangle:
+                size: self.size
+                pos: self.pos
+        size_hint: 1, 0.1
+        orientation: 'vertical'
+        pos_hint:{'x':0, 'y':0.9}
+
+        Label:
+            text: "Sopath"
+            color: 0,0,0
+            font_name: 'Arial'
+            bold: True
+            font_size: root.width * 0.06
+    BoxLayout:
+        canvas:
+            Color:
+                rgb: 0,1,0
+            Rectangle:
+                size: self.size
+                pos: self.pos
+        size_hint: 1, 0.4
+        orientation: 'vertical'
+        pos_hint:{'x':0, 'y':0}
+        BoxLayout:
+            canvas:
+                Color:
+                    rgb: 1,1,1
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
+            orintation:'horizontal'
+            pos_hint:{'x':0, 'y':0}
+            Label:
+                font_name: 'Arial'
+                color: 0,0,0
+                text: "Ingrese el ancho de la sopa de letras"
+                font_size: root.width * 0.02
+            TextInput:
+                id: ancho
+                hint_text:"Tamaño Y"
+                input_type: "number"
+        BoxLayout:
+            canvas:
+                Color:
+                    rgb: 1,1,1
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
+            orintation:'horizontal'
+            pos_hint:{'x':0, 'y':0.1}
+            Label:
+                font_name: 'Arial'
+                color: 0,0,0
+                text: "Ingrese La Sopa de letras"
+                font_size: root.width * 0.03
+            TextInput:
+                id: Sopa
+                hint_text:"Sopa de letras"
+                input_type: "text"
+        BoxLayout:
+            canvas:
+                Color:
+                    rgb: 1,1,1
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
+            orintation:'horizontal'
+            pos_hint:{'x':0, 'y':0.1}
+            Label:
+                font_name: 'Arial'
+                color: 0,0,0
+                text: "Ingrese las palabra a buscar"
+                font_size: root.width * 0.037
+            TextInput:
+                id: Palabras
+                hint_text:"Palabra a buscar"
+                input_type: "text"
+        BoxLayout:
+            canvas:
+                Color:
+                    rgb: 1,1,1
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
+            orintation:'horizontal'
+            pos_hint:{'x':0, 'y':0.1}       
+            Button:
+                text: "Enviar"
+                on_press: root.guardar()
+            Button:
+                text: "Ejecutar"
+                on_press: root.Pensar()
+            
+

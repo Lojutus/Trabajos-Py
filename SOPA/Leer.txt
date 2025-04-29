@@ -1,0 +1,8 @@
+Hola, soy Jose un saludo para comentarte: el documento py SOPA que se encuentra en la carpeta principal es una vercion sin adaptar para ser usada en la interfaz grafica, quiere decir que lo puedes usar para ver como funciona el programa, pero no esta vinculado a la interfaz grafica.
+
+En los documentos: Ancho, Data y Palabras estan los datos que se ingresan cuando precionamos el boton de enviar dentro del programa, el programa a abrir es proyect el test es tan solo pruebas que hago.
+
+El problema es que al llamar al archivo SOPA que esta dentro de la carpeta KIVI tras dar el boton enviar el programa colapsa (Ese documento si esta adaptado para ser usado en la interfaz grafica), si le puedes hechar un ojo al proyecto y decirme en que puedo mejorar me ayudarias mucho, muchas gracias.
+
+
+(A y perdon por esos nombres tan pichos de las variables lo hice hace un año no sabia lo que hacia )
