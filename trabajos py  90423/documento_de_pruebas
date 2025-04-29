@@ -1,0 +1,4 @@
+sopa=["a","b","c","d"]
+print(sopa)
+sopa.pop(-1)
+print(sopa)

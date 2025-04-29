@@ -1,0 +1,11 @@
+from tkinter import *
+raiz=Tk()
+raiz.title("CONTADOR DE TOQUES ")
+raiz.resizable(False,False)
+raiz.iconbitmap("png-transparent-button-ico-icon-button-miscellaneous-orange-material-thumbnail.ico")
+frame=Frame(raiz)
+frame.pack()
+boton=Button(frame, text="UNDEME", bg="red")
+frame.config(bg="white",width=500, height=500)
+boton.pack()
+raiz.mainloop()
